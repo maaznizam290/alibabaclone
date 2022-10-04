@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+// import {alibabalogo} from './Assets/Img/alibabalogo.svg'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='navbar'>
+      <a href="/">
+        Products
+      </a>
+      <li>Manufacturers</li>
+         </div>
+         <div className="navbarItems">
+          {/* <input type="text" className='navbarItems'> Search </input> */}
+         {/* <img src={require("../src/Assets/Img/alibabalogo.svg")} alt="" /> */}
+         <input type="text" className='navbarItems'>Input the text field</input>
+         </div>
+      </div>
   );
 }
 
